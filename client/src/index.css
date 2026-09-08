@@ -28,5 +28,5 @@
 
 /* In imported mode, use the source slide text once — never overlay the demo narrative. */
 .hero-slide.has-import .slide-content { display:none; }
-.fullscreen-slide:has(.imported-layers) > h1,
-.fullscreen-slide:has(.imported-layers) > .body-copy { display:none; }
+.fullscreen-slide:has(.imported-text) > h1,
+.fullscreen-slide:has(.imported-text) > .body-copy { display:none; }
