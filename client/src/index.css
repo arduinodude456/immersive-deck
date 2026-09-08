@@ -25,3 +25,8 @@
 .fullscreen-slide .imported-layers { z-index:1; }
 .fullscreen-slide > :not(.imported-layers) { position:relative; z-index:2; }
 @media(max-width:900px){ .depth-card{width:94vw;transform:translate(15px,15px) rotateY(-6deg) translateZ(-60px);} .imported-text{font-size:9px;} }
+
+/* In imported mode, use the source slide text once — never overlay the demo narrative. */
+.hero-slide.has-import .slide-content { display:none; }
+.fullscreen-slide:has(.imported-layers) > h1,
+.fullscreen-slide:has(.imported-layers) > .body-copy { display:none; }
